@@ -1,0 +1,14 @@
+mixin review__item(desc, text)
+    .item
+        .container
+            blockquote.review__item
+                p.review__text= text
+                cite.review__desc= desc
+
+
+section.review
+    .review__carousel.owl-carousel.owl-theme
+        +review__item('Michael Hopkins', 'Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.')
+        +review__item('Michael Hopkins', 'Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.')
+        +review__item('Michael Hopkins', 'Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.')
+

@@ -1,0 +1,17 @@
+mixin nav-li(name, link)
+  li
+    a.header__link(href= link)= name
+
+header.header
+  .container
+    nav.header__nav
+      a.header__logo(href="#main") Candy
+      ul.header__links
+        +nav-li('About','#about')
+        +nav-li('Contact','#contacts')
+        +nav-li('Portfolio','#portfolio')
+        +nav-li('Blog','#blog')
+      button.burger.visible-s
+        span.burger__span.burger__span_top
+        span.burger__span.burger__span_middle
+        span.burger__span.burger__span_bottom

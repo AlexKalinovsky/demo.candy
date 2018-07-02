@@ -1,0 +1,98 @@
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  &__carousel{
+    display: none !important;
+  }
+  &__item{
+    position: relative;
+    display: block;
+    height: 380px;
+    width: 380px;
+    text-decoration: none;
+  }
+  &__overlay{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: $white;
+    opacity: 0;
+    transition: all 0.2s ease;
+    &:hover{
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.8);
+      .portfolio__title{
+        transform: translateY(0);
+      }
+      .portfolio__subtitle{
+        transform: translateY(0);
+      }
+    }
+  }
+  &__title{
+    font-size: 24px;
+    padding: 20px 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  &__subtitle{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+  }
+  &__img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &_1{
+      background: url(../img/port1.jpg) no-repeat 50% 50%;
+      background-size: cover;
+    }
+    &_2{
+      background: url(../img/port2.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_3{
+      background: url(../img/port3.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_4{
+      background: url(../img/port4.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_5{
+      background: url(../img/port5.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_6{
+      background: url(../img/port6.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_7{
+      background: url(../img/port7.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_8{
+      background: url(../img/port8.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+    &_9{
+      background: url(../img/port9.jpg) no-repeat 50% 50%;
+       background-size: cover;
+    }
+  }
+}

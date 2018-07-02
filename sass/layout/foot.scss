@@ -1,0 +1,39 @@
+.footer{
+  padding: 40px 0;
+  background-color: $white_3;
+  &__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  &__icon{
+    display: block;
+    text-decoration: none;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    &_face{
+      background: url('../img/soc1.svg') no-repeat 50% 50%;
+    }
+    &_twit{
+      background: url('../img/soc2.svg') no-repeat 50% 50%;
+    }
+    &_beh{
+      background: url('../img/soc3.svg') no-repeat 50% 50%;
+    }
+    &_inst{
+      background: url('../img/soc4.svg') no-repeat 50% 50%;
+    }
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+  &__copyright{
+    font-size: 14px;
+    color: $black;
+  }
+}

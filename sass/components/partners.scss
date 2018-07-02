@@ -1,0 +1,11 @@
+.partners{
+  padding: 30px 0;
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img{
+    width: auto !important;
+  }
+}

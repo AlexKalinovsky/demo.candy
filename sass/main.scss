@@ -1,0 +1,26 @@
+@import "vendors/owl.carousel";
+@import "vendors/owl.theme.default";
+
+//base
+@import "base/vars";
+@import "base/settings";
+@import "base/grid";
+
+//components
+@import "components/banner";
+@import "components/about";
+@import "components/stats";
+@import "components/projects";
+@import "components/portfol";
+@import "components/review";
+@import "components/partners";
+@import "components/blog";
+@import "components/contacts";
+
+//layout
+@import "layout/header";
+@import "layout/foot";
+
+//utils
+@import "utils/mixins";
+@import "utils/media";

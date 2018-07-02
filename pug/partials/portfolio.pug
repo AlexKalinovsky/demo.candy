@@ -1,0 +1,38 @@
+-var user = 1
+-var userc = 1
+mixin portfolio__item(title, subtitle, href)
+    a.portfolio__item(href= href)
+        .portfolio__overlay
+            h3.portfolio__title= title
+            .portfolio__subtitle= subtitle
+        .portfolio__img(class="portfolio__img_" +user++)
+mixin portfolio__item-c(title, subtitle, href)
+    .item
+        a.portfolio__item(href= href)
+            .portfolio__overlay
+                h3.portfolio__title= title
+                .portfolio__subtitle= subtitle
+            .portfolio__img(class="portfolio__img_" +userc++)
+
+.portfolio.portfolio__main
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+    +portfolio__item('Vinyl Record', 'Mockup', '#')
+
+.portfolio.portfolio__carousel.owl-theme.owl-carousel
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+    +portfolio__item-c('Vinyl Record', 'Mockup', '#')
+

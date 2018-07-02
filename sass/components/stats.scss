@@ -1,0 +1,41 @@
+.stats{
+  padding: 80px 0;
+  background: url('../img/bg-pattern.jpg');
+  &__items{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: $white;
+  }
+  &__item{
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+  }
+  &__image{
+    width: 50px;
+    height: 50px;
+    &_case{
+      background: url('../img/case.png') no-repeat 50% 50%;
+    }
+    &_time{
+      background: url('../img/time.png') no-repeat 50% 50%;
+    }
+    &_reviews{
+      background: url('../img/reviews.png') no-repeat 50% 50%;
+    }
+    &_like{
+      background: url('../img/like.png') no-repeat 50% 50%;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  &__number{
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

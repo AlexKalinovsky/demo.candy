@@ -1,0 +1,15 @@
+-var part = 1
+mixin partners__item(src, alt)
+    .item
+        .partners__item
+            img.partners__img(src='img/part' +part++ +'.png', alt= alt)
+
+
+section.partners
+    .container
+        .partners__carousel.owl-carousel.owl-theme
+            +partners__item('#', 'partner')
+            +partners__item('#', 'partner')
+            +partners__item('#', 'partner')
+            +partners__item('#', 'partner')
+            +partners__item('#', 'partner')

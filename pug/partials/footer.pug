@@ -1,0 +1,12 @@
+mixin footer__icon(name, href)
+    .li
+        a(class='footer__icon footer__icon_'+name href= href)
+footer.footer
+    .container.container_fdc.container_aic
+        ul.footer__icons
+            +footer__icon('face', '#')
+            +footer__icon('twit', '#')
+            +footer__icon('beh', '#')
+            +footer__icon('inst', '#')
+        .footer__copyright
+            | 2016-2018 © Code by Kalinovsky

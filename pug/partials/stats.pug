@@ -1,0 +1,15 @@
+mixin item(name, number, text)
+    .stats__item
+        .stats__image(class="stats__image_" +name)
+        .stats__info
+            .stats__number= number
+            .stats__text= text
+
+section.stats
+    .container
+        .stats__items
+            +item('case','548', 'Projects completed')
+            +item('time','1465', 'Working hours')
+            +item('reviews','612', 'Positive feedbacks')
+            +item('like','735', 'Happy clients')
+

@@ -1,0 +1,8 @@
+@import "../utils/mixins";
+.projects{
+  padding: 80px 0;
+  text-align: center;
+  &__text{
+    @include text();
+  }
+}

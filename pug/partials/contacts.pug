@@ -1,0 +1,26 @@
+mixin contacts__item(title, text)
+    li.contacts__item
+        span
+            strong= title
+        |
+        |
+        span= text
+
+
+section.contacts#contacts
+    .container.container_jcsb.container_s
+        .contacts__info
+            h2.contacts__title Contact Info:
+            .contacts__text
+                | Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.
+            ul.contacts__items
+                +contacts__item('Address:', '10111 Santa Monica Boulevard, LA')
+                +contacts__item('Phone:', '+44 987 065 908')
+                +contacts__item('Email:', 'info@Example.com')
+                +contacts__item('Fax:', '+44 987 065 909')
+        form.contacts__form.form
+            .form__row
+                input(type='text', class='form__input form__input_name', name='name', placeholder='Your name', required)
+                input(type='email', class='form__input form__input_mail', name='mail', placeholder='Your Email', required)
+            textarea(class='form__input form__input_textarea', name='name', rows="8" placeholder='Your message', required)
+            input(type='submit', class='form__input form__submit' value="Send")

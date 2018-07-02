@@ -1,0 +1,48 @@
+-var count = 1
+mixin single-blog(title, date, text, filter, href)
+    .item
+        .single-blog
+            a.single-blog__header(href="#")
+                .single-blog__img(class="single-blog__img_" +count++)
+                .single-blog__filter= filter
+            .single-blog__body
+                a.single-blog__title(href="#")
+                    h3= title
+                .single-blog__date= date
+                .single-blog__text= text
+
+section.blog#blog
+    .container.container_fdc.container_aic
+        h2 Latest Blog
+        p.blog__desc
+            | Donec orci sem, pretium ac dolor et, faucibus faucibus mauris.
+            | Etiam, pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.
+        .blog__carousel.owl-carousel.owl-theme
+            +single-blog(
+            'Are you doing the Right Way?',
+            'August 14, 2016',
+            'Which all, morning isnt. Female and own living dry, and morning lesser first he stars under years thing.',
+            'Branding',
+            '#'
+            )
+            +single-blog(
+            'Are you doing the Right Way?',
+            'August 14, 2016',
+            'Which all, morning isnt. Female and own living dry, and morning lesser first he stars under years thing.',
+            'Branding',
+            '#'
+            )
+            +single-blog(
+            'Are you doing the Right Way?',
+            'August 14, 2016',
+            'Which all, morning isnt. Female and own living dry, and morning lesser first he stars under years thing.',
+            'Branding',
+            '#'
+            )
+            +single-blog(
+            'Are you doing the Right Way?',
+            'August 14, 2016',
+            'Which all, morning isnt. Female and own living dry, and morning lesser first he stars under years thing.',
+            'Branding',
+            '#'
+            )
